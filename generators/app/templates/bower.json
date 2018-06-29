@@ -1,0 +1,7 @@
+{
+  "name": "gerador-yeoman-nodejs",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.6.0"
+  }
+}

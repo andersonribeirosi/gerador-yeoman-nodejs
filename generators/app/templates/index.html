@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+
+  <title>Gerenciamento de supermercados</title>
+  <meta name="description" content="My App description">
+
+  <link rel="icon" href="images/favicon.ico">
+
+
+  <link rel="manifest" href="manifest.json">
+
+
+  <meta name="theme-color" content="#3f51b5">
+
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="My App">
+
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My App">
+
+
+  <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
+
+
+  <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#3f51b5">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <script>window.Polymer = { dom: "shadow", lazyRegister: !0 }, function () { "use strict"; var e = function () { window.HTMLImports || document.dispatchEvent(new CustomEvent("WebComponentsReady", { bubbles: !0 })) }, n = "registerElement" in document && "import" in document.createElement("link") && "content" in document.createElement("template"); if (n) e(); else { var t = document.createElement("script"); t.async = !0, t.src = "bower_components/webcomponentsjs/webcomponents-lite.min.js", t.onload = e, document.head.appendChild(t) } }(), "serviceWorker" in navigator && window.addEventListener("load", function () { navigator.serviceWorker.register("service-worker.js") });</script>
+
+  <link rel="import" href="src/<%= elementName %>.html">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <<%= elementName %>> </<%= elementName %>>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
+  <div class="container" style="width: 800px;height: 150px;left: 50%; margin: -130px 0 0 -210px; padding:20px;
+  position: absolute;
+  top: 40%; ">
+
+  <div>
+
+  </div>
+    <div id="centro" class="omb_login">
+        <img src="./assets/login.png" alt="">
+
+
+      <div id="centro" class="row omb_row-sm-offset-3 omb_loginOr">
+        <div class="col-xs-12 col-sm-6">
+          <!-- <hr class="omb_hrOr"> -->
+        </div>
+      </div>
+
+      <div class="row omb_row-sm-offset-3">
+        <div class="col-xs-12 col-sm-6">
+          <form #f="ngForm" (submit)="form_login(f)" class="omb_loginForm" action="" autocomplete="off" method="POST">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-user"></i>
+              </span>
+              <input type="text" class="form-control" required ngModel name="email" placeholder="Email">
+            </div>
+            <span class="help-block"></span>
+
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-lock"></i>
+              </span>
+              <input type="password" class="form-control" required ngModel name="senha" placeholder="Senha">
+            </div>
+            <br>
+
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

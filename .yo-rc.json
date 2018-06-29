@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Anderson Ribeiro",
+      "authorEmail": "andersonribeiro.sifacisa@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
